@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foodie's Paradise</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1900d3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px gray;
+        }
+
+        h2 {
+            color: #1900d3;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        .gender input,
+        .foods input {
+            width: auto;
+        }
+
+        .gallery {
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 180px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px rgb(73, 58, 236);
+        }
+
+        .links a {
+            display: block;
+            margin: 8px 0;
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            color: #0015d3;
+        }
+
+        button {
+            background-color: #000bd3;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #1800a0;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="ptag" class=""pclass> This is my js class </p>
+    <button onclick ="alert('You clicked me!')">click me</button>
+    <input type="text" onchange="example()" id="input">
+    <p id = "inputField"></p>
+    <script src ="manu.js"></script>
+<script>
+    console.log("Hello harini shankar")
+</script>
+<header>
+    <h1>🍽 Foodie's Paradise 🍽</h1>
+    <p>Explore Flavors From Around The World</p>
+</header>
+
+<div class="container">
+
+    <h2>customers Information</h2>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Address</label>
+        <textarea rows="3"></textarea>
+
+        <label>Gender</label>
+
+        <div class="gender">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </div>
+
+        <br>
+
+        <label>favorite cuisine </label>
+
+        <select>
+            <option>Indian</option>
+            <option>Chinese</option>
+            <option>Italian</option>
+            <option>Mexican</option>
+            <option>Japanese</option>
+            <option>Korean</option>
+            <option>Thai</option>
+            <option>French</option>
+            <option>American</option>
+        </select>
+
+        <label>Enjoy your food</label>
+
+        <div class="foods">
+            <input type="checkbox"> Biryani
+            <input type="checkbox"> Pizza
+            <input type="checkbox"> Burger
+            <input type="checkbox"> Pasta
+            <input type="checkbox"> Dosa
+            <input type="checkbox"> Noodles
+            <input type="checkbox"> Sushi
+            <input type="checkbox"> Tacos
+        </div>
+
+        <h2>food gellery</h2>
+
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Pizza">
+
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600" alt="Biryani">
+
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600" alt="Burger">
+
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600" alt="Pasta">
+        </div>
+
+        <h2>Rate Our food</h2>
+
+        <select>
+            <option>Excellent</option>
+            <option> Very Good</option>
+            <option> Good</option>
+            <option> Average</option>
+            <option> Poor</option>
+        </select>
+
+        <label>Your rating</label>
+
+        <textarea rows="5"
+        placeholder="Share your thoughts about food..."></textarea>
+
+        <h2>Food Websites</h2>
+
+        <div class="links">
+
+            <a href="https://www.zomato.com" target="_blank">
+                Zomato
+            </a>
+
+            <a href="https://www.swiggy.com" target="_blank">
+                Swiggy
+            </a>
+
+            <a href="https://www.allrecipes.com" target="_blank">
+                AllRecipes
+            </a>
+
+            <a href="https://www.foodnetwork.com" target="_blank">
+                Food Network
+            </a>
+
+            <a href="https://www.tasteofhome.com" target="_blank">
+                Taste of Home
+            </a>
+
+        </div>
+
+        <br>
+
+        <button type="submit">Submit  Review</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
